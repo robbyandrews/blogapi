@@ -1,7 +1,6 @@
 # BlogAPI
 
-BlogAPI is a Node.js Application utilizing Express, Mongoose, and MongoDB to demonstrate a RESTful API.  DotEnv and a .env file is also included to show the use of a .env file containing environment variables.  No important information is stored here such as. 
-
+BlogAPI is a Node.js Application utilizing Express, Mongoose, and MongoDB to demonstrate a RESTful API.  DotEnv and a .env file is also included to show the use of a .env file containing environment variables.  No important information is stored here such as AWS Keys, Passwords, or any other secrets. 
 
 ## Getting Started
 
@@ -112,7 +111,7 @@ Content-Type: application/json
 To create a blog entry using the POST method, the body must contain a JSON object with the required keys of `author: string` and `content: string`. Two other key value pairs will be generated automatically: the id value which is created by MongoDB to identify docuemnts, and a postDate which is the value of the JavaScript function `Date.now`.
 
 
-**Update a blog entry by id using PATCH (not implemented yet)** 
+**Update a blog entry by id using PATCH** 
 ```HTTP
 PATCH /blogs/:id
 Content-Type: application/json
@@ -122,10 +121,10 @@ Content-Type: application/json
     "content": "Updated Content"
 }
 ```
-Using the `PATCH` method along with a JSON body and the id of the desired post, you can update the post with new content.  A `PATCH` method was chosen over `PUT`  as the `PUT` method will replace the entire URI request, and `PATCH` will only replace the chosen items.
+Using the `PATCH` method along with a JSON body and the id of the desired post, you can update the post with a new author, and/or new content.  A `PATCH` method was chosen over `PUT`  as the `PUT` method will replace the entire URI request, and `PATCH` will only replace the chosen items.
 
 
-**Delete a blog entry by id using DELETE (not yet implemented)** 
+**Delete a blog entry by id using DELETE** 
 ```HTTP
 DELETE /blogs/:id
 
@@ -134,6 +133,5 @@ DELETE /blogs/:id
 A post may be deleted using the `DELETE` method and it's corresponding id.
 
 ### Future work
-
-There still needs to be work done to complete the `PATCH` and `DELETE` methods.  In addtion there 
+Try adding more routes, expand the schema to allow for more attributes in the documents.  Add routes to find posts by an author, or even search content. 
 
