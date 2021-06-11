@@ -3,6 +3,9 @@ require('dotenv').config();
 const express = require('express'); 
 const app = express(); 
 const mongoose = require('mongoose'); 
+const cors = require('cors');
+
+app.use(cors());
 
 const db_url = process.env.DBURL || 'mongodb://localhost/blogs'
 const port = process.env.PORT || 3000;

@@ -133,5 +133,5 @@ DELETE /blogs/:id
 A post may be deleted using the `DELETE` method and it's corresponding id.
 
 ### Future work
-Try adding more routes, expand the schema to allow for more attributes in the documents.  Add routes to find posts by an author, or even search content. 
+Authentication, API Limits Try adding more routes, expand the schema to allow for more attributes in the documents.  Add routes to find posts by an author, or even search content. 
 
