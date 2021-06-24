@@ -130,7 +130,7 @@ DELETE /blogs/:id
 
 
 ```
-A post may be deleted using the `DELETE` method and it's corresponding id.
+A post may be deleted using the `DELETE` method and its corresponding id.
 
 ### Future work
 Authentication, API Limits, adding more routes, expand the schema to allow for more attributes in the documents.  Add routes to find posts by an author, or even search content. 
