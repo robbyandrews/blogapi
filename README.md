@@ -42,7 +42,7 @@ Your dependencies are now installed and you are ready to begin using the applica
 
 ## Running the Application
 
-We recommend using `nodemon` to run BlogAPI so that any changes you make while running your application.  Nodemon can be installed globally with npm.
+We recommend using `nodemon` to run BlogAPI, `nodemon` will restart the node service when changes are made and saved.   Nodemon can be installed globally with npm.
 ```
 npm i -g nodemon
 ```
