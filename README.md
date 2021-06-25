@@ -108,7 +108,7 @@ Content-Type: application/json
     "content": "This is my first post"
 }
 ```
-To create a blog entry using the POST method, the body must contain a JSON object with the required keys of `author: string` and `content: string`. Two other key value pairs will be generated automatically: the id value which is created by MongoDB to identify documents, and a postDate which is the value of the JavaScript function `Date.now`.
+To create a blog entry using the POST method, the body must contain a JSON object with the required keys of `author: string` and `content: string`. Two other key value pairs will be generated automatically: the id value which is created by MongoDB to identify documents and a postDate which is the value of the JavaScript function `Date.now`.
 
 
 **Update a blog entry by id using PATCH** 
