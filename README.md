@@ -68,10 +68,12 @@ Currently the Model utilized by mongoose and MongoDB to store blog data is the f
 type: String,
 required: true
     },
+    
     content:{
 type: String,
 required: true
     },
+    
     postDate:{
 type: Date,
 required: true,
@@ -79,7 +81,7 @@ default: Date.now
     }
 
 
-})
+
 
 ```
 
