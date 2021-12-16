@@ -5,6 +5,8 @@ const app = express();
 const mongoose = require('mongoose'); 
 const cors = require('cors');
 
+const robby = "iscool";
+
 app.use(cors());
 
 const db_url = process.env.DBURL || 'mongodb://localhost/blogs'
